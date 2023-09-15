@@ -1,0 +1,49 @@
+def get_grade_points(grade):
+    grade_points = {
+        'O': 10,
+        'A+': 9,
+        'A': 8,
+        'B+': 7,
+        'B': 6,
+        'C': 5,
+        'P': 4,
+        'F': 0
+    }
+    return grade_points.get(grade, 0)
+
+def calculate_cgpa(credit_hours, grades):
+    total_credit_points = 0
+    total_credits = 0
+
+    for i in range(len(credit_hours)):
+        credit = credit_hours[i]
+        grade = grades[i]
+        grade_point = get_grade_points(grade)
+
+        total_credit_points += credit * grade_point
+        total_credits += credit
+
+    cgpa = total_credit_points / total_credits
+    return cgpa
+
+def main():
+    num_courses = int(input("Enter the number of courses: "))
+    credit_hours = []
+    grades = []
+
+    for i in range(num_courses):
+        course_credit = float(input(f"Enter credit hours for course {i+1}: "))
+        course_grade = input(f"Enter grade for course {i+1} (O, A+, A, B+, B, C, P, F): ").strip().upper()
+
+        if course_grade not in ['O', 'A+', 'A', 'B+', 'B', 'C', 'P', 'F']:
+            print("Invalid grade entered. Please enter a valid grade.")
+            return
+
+        credit_hours.append(course_credit)
+        grades.append(course_grade)
+
+    cgpa = calculate_cgpa(credit_hours, grades)
+    print(f"Your CGPA is: {cgpa:.2f}")
+
+if __name__ == "__main__":
+    main()
