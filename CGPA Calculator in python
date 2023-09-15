@@ -1,3 +1,5 @@
+#python project for my college
+#get grade points
 def get_grade_points(grade):
     grade_points = {
         'O': 10,
@@ -10,11 +12,11 @@ def get_grade_points(grade):
         'F': 0
     }
     return grade_points.get(grade, 0)
-
+#define calculate formulaaa
 def calculate_cgpa(credit_hours, grades):
     total_credit_points = 0
     total_credits = 0
-
+#uning for loop
     for i in range(len(credit_hours)):
         credit = credit_hours[i]
         grade = grades[i]
@@ -25,25 +27,25 @@ def calculate_cgpa(credit_hours, grades):
 
     cgpa = total_credit_points / total_credits
     return cgpa
-
+#main function
 def main():
     num_courses = int(input("Enter the number of courses: "))
     credit_hours = []
     grades = []
-
+#for loop inside another one loop
     for i in range(num_courses):
         course_credit = float(input(f"Enter credit hours for course {i+1}: "))
         course_grade = input(f"Enter grade for course {i+1} (O, A+, A, B+, B, C, P, F): ").strip().upper()
-
+#using if conditons
         if course_grade not in ['O', 'A+', 'A', 'B+', 'B', 'C', 'P', 'F']:
             print("Invalid grade entered. Please enter a valid grade.")
             return
 
         credit_hours.append(course_credit)
         grades.append(course_grade)
-
+#output print state ment
     cgpa = calculate_cgpa(credit_hours, grades)
     print(f"Your CGPA is: {cgpa:.2f}")
-
+#again using conditions
 if __name__ == "__main__":
     main()
