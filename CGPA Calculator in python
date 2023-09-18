@@ -26,6 +26,7 @@ def calculate_cgpa(credit_hours, grades):
         total_credits += credit
 
     cgpa = total_credit_points / total_credits
+#return the value
     return cgpa
 #main function
 def main():
