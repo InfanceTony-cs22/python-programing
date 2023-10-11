@@ -50,3 +50,4 @@ def main():
 #again using conditions
 if __name__ == "__main__":
     main()
+print("Study well and try to score good marks...")
