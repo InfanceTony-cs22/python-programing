@@ -1,0 +1,55 @@
+what is function:
+       In computer programming, a function is a named, reusable block of code that performs a specific task or set of tasks
+
+
+Use of function:
+       Promote Code Reusability: They allow you to define a block of code that can be executed multiple times with different inputs, reducing redundancy.
+       Organize Code           : Functions help in structuring code by breaking it into modular, manageable parts, improving readability and maintainability.
+
+Types of function:
+
+Built-in Functions:
+These are functions that are pre-defined in Python and come with the language. Examples include len(), print(), max(), and min().
+
+User-Defined Functions:
+Functions created by the programmer to perform a specific task. They are defined using the def keyword.
+
+Anonymous Functions (Lambda Functions):
+Small, one-line functions defined using the lambda keyword. They are often used for short-term tasks.
+
+Recursive Functions:
+Functions that call themselves during their execution. Recursion is a technique where a function solves a problem by solving smaller instances of the same problem.
+
+
+
+
+
+Examples:
+
+Built-in 
+
+ text="Byte Bash Blitz"
+ length_text=len(text)
+ print(f"Length of the string is :{lenght_text}")
+
+
+ User defined :
+ 1
+def add_numbers(x, y):
+    sum_result = x + y
+    print(sum_result)
+
+num1 = int(input("Enter the first number: "))
+num2 = int(input(" "))
+add_numbers(num1, num2)
+2
+def big(x, y):
+    if x > y:
+        bigest = x
+    else:
+        bigest = y
+    print(bigest)
+    
+num1 = float(input("nter the first number: "))
+num2 = float(input("enter the second number: "))
+big(num1, num2)
