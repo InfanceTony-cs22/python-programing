@@ -53,3 +53,10 @@ def big(x, y):
 num1 = float(input("nter the first number: "))
 num2 = float(input("enter the second number: "))
 big(num1, num2)
+3
+def number():
+    for num in range(1, 11):
+        print(num)
+
+number()
+
