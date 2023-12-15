@@ -43,7 +43,11 @@ Functions that call themselves during their execution. Recursion is a technique 
 
 Examples:
 
-Built-in 
+Built-in :
+
+type()
+str()
+int()
 
 let=[]
 for i in range(65,91):
