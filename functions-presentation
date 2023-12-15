@@ -1,6 +1,23 @@
 what is function:
        In computer programming, a function is a named, reusable block of code that performs a specific task or set of tasks
 
+structure:
+
+
+(  function_name(parameters):
+    """
+    Docstring (optional): A brief description of the function.
+    This is where you document what the function does, what parameters it takes,
+    and what it returns.
+    """
+    
+    # Function body: The actual code that performs the task.
+    # It can include statements, expressions, and other function calls.
+    
+    # Optionally, use the "return" statement to send a value back to the caller.
+    return result  )
+
+
 
 Use of function:
        Promote Code Reusability: They allow you to define a block of code that can be executed multiple times with different inputs, reducing redundancy.
@@ -27,6 +44,16 @@ Functions that call themselves during their execution. Recursion is a technique 
 Examples:
 
 Built-in 
+
+let=[]
+for i in range(65,91):
+    print(chr(i))
+
+
+let.append(chr(i))
+print(let)
+
+
 
  text="Byte Bash Blitz"
  length_text=len(text)
